@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://source.unsplash.com/random" class="rounded-circle" type="image/gif">
+    <title>Fookbook</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- login -->
+    <main id="main" class="pb-lg-5">
+        <div
+            class="container d-flex flex-column flex-lg-row justify-content-between align-items-center mt-lg-5 pt-lg-5  ">
+            <!--heading  -->
+            <div class="text-center text-lg-start mt-lg-5 pt-lg-5 w-100 my-lg-5">
+                <h1 class="fw-bolder text-primary fs-0 ">footbook</h1>
+                <p class=" text-black fs-4 w-75 mx-auto mx-lg-0">Footbook helps you connect and share with the people in
+                    your life.</p>
+            </div>
+            <!-- login form -->
+            <div class="d-flex flex-column w-100">
+                <div class=" bg-white shadow rounded-3 input-group-lg p-3">
+                    <input type="email" class="form-control my-3" placeholder="Email address or phone number">
+                    <input type="password" class="form-control my-3" placeholder="Password">
+                    <div class="form-group ">
+                        <a href="./feed.html">
+                            <button class="btn btn-primary w-100 fs-4 my-3" id="" name="btn" value="">Log In</button>
+                        </a>
+                    </div>
+                    <div class="form-group text-center text-lg-center ">
+                        <a href="./forgotpassword.html" class="text-decoration-none w-100 ">Forgotten password ?</a>
+                    </div>
+                    <hr>
+                    <div class="form-group text-center ">
+                        <button type="button" class="btn btn-success  fs-4 my-3" data-bs-toggle="modal"
+                            data-bs-target="#signUpModal">Create New Account</button>
+                    </div>
+                </div>
+                <!-- create modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- modal header -->
+                            <div class="modal-header">
+                                <div>
+                                    <h2 class="modal-title" id="signUpModalLabel">Sign Up</h2>
+                                    <p class="text-muted fs-7 fst-italic m-0">It's quick and easy</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- modal body -->
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <!-- name -->
+                                        <div class="row">
+                                            <div class="col col-lg-6">
+                                                <input type="text" class="form-control" placeholder="First name">
+                                            </div>
+                                            <div class="col col-lg-6">
+                                                <input type="text" class="form-control" placeholder="Surname">
+                                            </div>
+                                        </div>
+                                        <!-- email or phone number -->
+                                        <div class="row pt-3">
+                                            <div class="col col-lg-12">
+                                                <input type="email" class="form-control"
+                                                    placeholder="Mobile number or email address">
+                                            </div>
+                                        </div>
+                                        <!-- password -->
+                                        <div class="row pt-3">
+                                            <div class="col col-1lg-2">
+                                                <input type="password" class="form-control" placeholder="New password">
+                                            </div>
+                                        </div>
+                                        <!-- D.o.b -->
+                                        <div class="row pt-3">
+                                            <p class="text-muted fs-7 m-0">Date of birth <i
+                                                    class="bi bi-question-circle" type="button" data-bs-container="body"
+                                                    data-bs-toggle="popover" data-bs-placement="left"
+                                                    data-bs-content="Providing your date of birth helps make sure that you get the right Facebook experience for your age. If you want to change who sees this, go to the About section of your Profile."></i>
+                                            </p>
+                                            <div class="col col-lg-4">
+                                                <input type="date" class="form-control" placeholder="Date">
+                                            </div>
+                                            <div class="col col-lg-4">
+                                                <input type="date" class="form-control" placeholder="Month">
+                                            </div>
+                                            <div class="col col-lg-4">
+                                                <input type="date" class="form-control" placeholder="Year">
+                                            </div>
+                                        </div>
+                                        <!-- gender -->
+                                        <div class="row pt-3">
+                                            <p class="text-muted fs-7 m-0">Gender <i class="bi bi-question-circle"
+                                                    type="button" data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="left"
+                                                    data-bs-content="You can change who sees your gender on your profile later. Select Custom to choose another gender, or if you'd rather not say."></i>
+                                            </p>
+                                            <div class="col col-lg-4">
+                                                <div
+                                                    class="form-check form-control w-100 d-lg-flex flex-row-reverse justify-content-between align-items-center">
+                                                    <input class="form-check-input m-0" type="radio"
+                                                        name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                    <label class="form-check-label " for="flexRadioDefault1">
+                                                        Male
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col col-lg-4">
+                                                <div
+                                                    class="form-check form-control w-100 d-lg-flex flex-row-reverse justify-content-between align-items-center">
+                                                    <input class="form-check-input m-0" type="radio"
+                                                        name="flexRadioDefault" id="flexRadioDefault2">
+                                                    <label class="form-check-label " for="flexRadioDefault2">
+                                                        Female
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col col-lg-4">
+                                                <div
+                                                    class="form-check form-control w-100 d-lg-flex flex-row-reverse justify-content-between align-items-center">
+                                                    <input class="form-check-input m-0" type="radio"
+                                                        name="flexRadioDefault" id="flexRadioDefault3">
+                                                    <label class="form-check-label " for="flexRadioDefault3">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3 d-none  " id="genderSelect">
+                                            <div class="col col-lg-12">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select your pronoun</option>
+                                                    <option value="1">She: "Wish her a happy birthday!"</option>
+                                                    <option value="2">He: "Wish him a happy birthday!"</option>
+                                                    <option value="3">They: "Wish them a happy birthday!"</option>
+                                                </select>
+                                            </div>
+                                            <p class="text-muted fs-7"> Your pronoun is visible to everyone.</p>
+                                            <div class="col col-lg-12">
+                                                <input type="text" class="form-control" placeholder="Gender (optional)">
+                                            </div>
+                                        </div>
+                                        <!-- policy -->
+                                        <p class="text-muted fs-7 pt-3">By clicking Sign Up, you agree to our Terms,
+                                            Data Policy and Cookie Policy. You may receive SMS notifications from us and
+                                            can opt out at any time.</p>
+                                        <div class="form-group text-center">
+                                            <button type="button"
+                                                class="btn btn-success fw-bold  fs-6 w-50 rounded">Sign Up</button>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- tag -->
+                <div class=" text-center pt-3">
+                    <a class="text-dark text-decoration-none fw-bold">Create page</a>
+                    <span class="fs-6"> for a celebrity, band or business.</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- footer -->
+    <footer class="bg-white text-muted position-fixed w-100 bottom-0 pt-lg-5 " >
+        <div class="container">
+            <!-- languages -->
+            <div class="d-flex flex-wrap">
+                <div class="text-decoration-none">
+                    <a class="mx-2 text-decoration-none text-muted fs-7"> English (UK)</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">Tiếng Việt</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">中文(台灣)</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">한국어</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">日本語</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">Français (France)</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">ภาษาไทย</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">Español</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">Português (Brasil)</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">Deutsch</a>
+                    <a class="mx-2 text-decoration-none text-muted fs-7">Italino</a>
+                </div>
+            </div>
+            <hr>
+            <!-- actions -->
+            <div class="d-flex flex-wrap">
+                <a class="mx-2  text-decoration-none text-muted fs-7"> Sign up</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Log in</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Messenger</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Footbook Lite</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Watch</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Places</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Games</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Marketplaces</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7"> Footbook Pay</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Jobs</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Oculus</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7"> Portal</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7"> Instagram</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Local</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Fundraisers</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Services</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7"> Voting Information Centre</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">About</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Create Ad</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Create Page</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Developers</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Careers</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7"> Privacy</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Cookies</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">AdChoices</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Terms</a>
+                <a class="mx-2  text-decoration-none text-muted fs-7">Help</a>
+            </div>
+            <!-- copyright -->
+            <p class="mx-2 mt-3">Footbook &copy; 2021 </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Js only -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- my js -->
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
